@@ -1,0 +1,138 @@
+.about {
+    padding: 8rem 5% 5rem;
+    min-height: 100vh;
+    background: #fff;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .about-image {
+    flex: 1;
+    max-width: 450px;
+  }
+  
+  .profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-content {
+    flex: 1;
+    padding-left: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #2d2e32;
+    margin-bottom: 2.5rem;
+  }
+  
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #2d2e32;
+  }
+  
+  .info-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .info-value {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .info-value.available {
+    color: #25a765;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .about-content {
+      padding-left: 0;
+    }
+    
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .download-btn {
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding: 1rem 2.5rem;
+    background: #2d2e32;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .download-btn:hover {
+    background: white;
+    color: #2d2e32;
+    border-color: #2d2e32;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (max-width: 800px) {
+    .download-btn {
+      width: 60%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about-container {
+      padding: 0 2rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .about-container {
+      padding: 0 2rem;      
+    }
+    .download-btn {
+      width: 100%;
+    }
+    .about-content {
+      padding-left: 0;
+    }
+  }
